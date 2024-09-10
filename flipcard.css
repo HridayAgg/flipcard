@@ -1,3 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');body{
+    background: linear-gradient(to top,rgb(27, 199, 203),rgb(44, 220, 155));
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 1000px;
+}
+
+*{
+    font-family:'Montserrat';
+    font-weight: 600;
+}
 .container{
+
+ border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 0px;
+padding: 0px;
+background-color: white;
+width: 300px;
+height: 400px;
+border: none;
+box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+margin-right: 60PX;
+z-index: 100;
+}
+.pfp{
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-top: 30px;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.name{
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+}
+.info{
+    font-weight: 300;
+}
+.logo{
+    mix-blend-mode: screen;
+}
+.logocontainer{
+    background-color:#2bcbb3 ;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.row4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+.logocontainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo{
+    width: 40px;
+    display: flex;
     
+}
+.backpic{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.maincontainer{
+    perspective: 1000px;
+}
+.innercontainer{
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}   
+.backcontainer,.container{
+    backface-visibility: hidden;
+    position: absolute;
+    object-fit: cover;
+}
+.maincontainer:hover .innercontainer{
+    transform: rotateY(180deg);
+}
+.backcontainer{
+    transform: rotateY(180deg);
+
 }
